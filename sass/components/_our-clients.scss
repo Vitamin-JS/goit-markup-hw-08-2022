@@ -1,0 +1,56 @@
+/* =============================== Секция Постоянные клиенты ==================================  */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  /* === Заголовок Клиенты ============ */
+  &-title {
+    margin-bottom: 50px;
+  }
+
+  /* ======= Список компаний =========== */
+  &-list {
+    display: flex;
+  }
+}
+
+/* ==== Ссылки на компании  ========== */
+.clients a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  background: $main-bg-color;
+  border: 1px solid $team-social-icons;
+  border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-clients {
+  fill: $team-social-icons;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients a:hover,
+.clients a:focus {
+  border: 1px solid $color-acent;
+}
+
+.clients a:hover svg,
+.clients a:focus svg {
+  fill: $color-acent;
+}

@@ -1,0 +1,68 @@
+/* ================ Секция Преимущесва ==================  */
+/* ==== Flex-box Преимущества   =============*/
+.adv-list {
+  display: flex;
+
+  & > li {
+    width: calc((100% - 90px) / 4);
+    // display: flex;
+    // flex-direction: column;
+  }
+
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+/* === Фон иконок в Преимуществах -Var#3 Inline-SVG  =======*/
+.icon-advantage {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background-color: $secondary-bg-color;
+}
+
+/* =====  Margin внизу всей секции  ==========*/
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  & h2 {
+    @extend %visually-hidden;
+  }
+}
+
+/* ===== Margin иконок   =================*/
+.advantage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* =====  Margin заголовков    ==============*/
+.advant-title {
+  margin-bottom: 10px;
+}
+
+/* ========Заголовки в Преимуществах и Чем занимаемся   ================*/
+.advant-title,
+.works-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+}
+
+/* ======== Абзац в Преимуществах========== */
+.advantage p {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  height: 75px;
+}

@@ -1,0 +1,112 @@
+/* =================================== Секция Наша команда ===================================  */
+/* =====  Размеры всей секции  ============ */
+.team {
+  background-color: $secondary-bg-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-members {
+  display: flex;
+}
+
+/* ======== Заголовок Наша команда ======== */
+.team-title {
+  margin-bottom: 50px;
+}
+
+/* ========== Фото команды   ============== */
+.team img {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.team-card {
+  overflow: hidden;
+}
+
+/* ========== Имена сотрудников =========== */
+.team-name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+
+  margin-bottom: 10px;
+}
+
+/* ========== Должности =================== */
+.team-position {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 16px;
+}
+
+/* ======== Список Соц.-сети команды ========== */
+.team-social {
+  display: flex;
+  text-align: center;
+
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 24px;
+}
+
+/* ========= Соцсети иконки Var#3 Inline-SVG ==================== */
+.team-social a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $main-bg-color;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $color-acent;
+  }
+}
+
+.icon-svg {
+  fill: $team-social-icons;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social > li:hover .icon-svg {
+  fill: $main-bg-color;
+}
+
+/* ==== Карточка команды- Li */
+.team-card {
+  width: calc((100% - 90px) / 4);
+  background: $main-bg-color;
+
+  box-shadow: 2px 2px 3px 2px rgb(0 0 0 / 12%), 2px 1px 1px 1px rgb(0 0 0 / 19%),
+    1px 2px 1px 2px rgb(0 0 0 / 15%);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* === Отступы в соцсетях команды ======== */
+.team-social > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* === Правый отступ для 3х первых карточек сотрудников ===*/
+.team-members .team-card:nth-child(-n + 3) {
+  margin-right: 30px;
+}

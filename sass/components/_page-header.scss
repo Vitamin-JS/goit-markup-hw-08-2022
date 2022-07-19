@@ -1,0 +1,129 @@
+/* =====================   Стили Хедера ========================= */
+/* ==== Flex-box Header   ============= */
+header {
+  min-width: 1200px;
+}
+
+.header-flex {
+  display: flex;
+  align-items: baseline;
+  padding-top: 6px;
+}
+
+/* ================ Логотип ============ */
+.logo-header {
+  display: block;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $secondary-text-color;
+  text-decoration: none;
+
+  margin-left: 0;
+  margin-right: 86px;
+
+  & span {
+    font-family: Raleway, sans-serif;
+    color: $color-acent;
+  }
+}
+
+/* ==============  Навигация =========== */
+.nav-list {
+  display: flex;
+  align-items: center;
+
+  & > li:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: $secondary-text-color;
+  text-decoration: none;
+  padding-top: 22px;
+  padding-bottom: 28px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $color-acent;
+  }
+
+  &.current {
+    color: $color-acent;
+  }
+}
+
+/* ===== Декоратвная планка в навигации шапки ==== */
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: $color-acent;
+  border-radius: 2px;
+  opacity: 0;
+}
+
+.current-page::after {
+  opacity: 1;
+}
+
+/* ========== Контакты в навигации ======== */
+.nav-contacts {
+  display: flex;
+  margin-left: auto;
+
+  & > li:not(:first-of-type) {
+    margin-left: 30px;
+  }
+}
+
+.nav-contacts a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: $main-text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $color-acent;
+  }
+}
+
+/* ===== Иконки перед контактами  Вариант через ::before/after в коде HW06 ====== */
+
+/* ===== Иконки перед контактами  Вариант через inline-SVG  ====== */
+.nav-contacts a {
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 30px;
+}
+
+.icon {
+  margin-right: 10px;
+  fill: $main-text-color;
+}
+
+.nav-contacts li:hover .icon {
+  fill: $color-acent;
+}

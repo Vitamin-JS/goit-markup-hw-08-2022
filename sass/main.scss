@@ -1,0 +1,16 @@
+// в этот файл подключаем все паршиалсы
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./utils/visually-hidden";
+@import "./base/common";
+@import "./components/page-header";
+@import "./components/section-titles";
+@import "./components/hero";
+@import "./components/hero-modal-window";
+@import "./components/advatnages";
+@import "./components/what-we-do";
+@import "./components/our-team";
+@import "./components/our-clients";
+@import "./components/page-footer";
+
+// Проверить Visually-hidden который созд. вначале main.css для Advantages h2

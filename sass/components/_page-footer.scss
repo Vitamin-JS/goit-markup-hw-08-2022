@@ -1,0 +1,148 @@
+/* =========================  Футер  ======================== */
+footer {
+  background-color: $footer-bg-color;
+  min-width: 1200px;
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*  ========  Логотип Футера  ============ */
+.logo-header.logo-footer {
+  color: $main-bg-color;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ======= Адрес, Тел, E-mail в футере ========== */
+.foot-adress {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $footer-grey-text;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $main-bg-color;
+  }
+}
+
+.footer-contacts li {
+  margin-bottom: 9px;
+}
+
+/* ======= Отступ справа от адреса ============== */
+.footer-contacts {
+  margin-right: 70px;
+}
+
+/* ========= Заголовки в футере   ========*/
+.title-footer {
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-bg-color;
+  margin-bottom: 20px;
+}
+
+/* ===== Ссылки на соцсети в футере Var#3 Inline-SVG  ==========================*/
+.foot-list {
+  display: flex;
+}
+
+.icon-foot-svg {
+  fill: $main-bg-color;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-foot a {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+  background-color: $footer-social-bg;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $color-acent;
+  }
+}
+
+.icon-foot:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+/* ======= Поле ввода E-mail в футере   ============= */
+.footer-action {
+  margin-left: auto;
+
+  & input {
+    width: 358px;
+    height: 50px;
+
+    font-size: 16px;
+    color: $footer-grey-text;
+    background-color: $footer-bg-color;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    margin-right: 12px;
+    padding-left: 16px;
+  }
+}
+
+/* ======= Кнопка ПОДПИСАТЬСЯ в футере   ============= */
+/* === Стили кнопки -:after работает только при display: flex; ======================     !!!     */
+.input-deco {
+  display: flex;
+}
+
+.footer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: $main-bg-color;
+  background-color: $color-acent;
+
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  &::after {
+    content: " ";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/SVG-for-sprite/icon-send.svg);
+    margin-left: 10px;
+  }
+}
