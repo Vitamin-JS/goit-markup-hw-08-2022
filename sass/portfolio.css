@@ -263,11 +263,21 @@ p {
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 450px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 /* =====================   Стили Хедера ========================= */
