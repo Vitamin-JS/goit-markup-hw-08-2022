@@ -270,7 +270,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 738px;
   }
@@ -285,50 +285,63 @@ p {
 
 /* =====================   Стили Хедера ========================= */
 /* ==== Flex-box Header   ============= */
-header {
-  min-width: 1200px;
+@media screen and (max-width: 480px) {
+  .header-nav,
+.nav-contacts.list {
+    display: none;
+  }
 }
-
-.header-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding-top: 6px;
+@media screen and (min-width: 480px) {
+  .header-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-top: 6px;
+  }
 }
-
 /* ================ Логотип ============ */
 .logo-header {
   display: block;
   font-family: Raleway, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.17;
   color: #212121;
   text-decoration: none;
   margin-left: 0;
-  margin-right: 86px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 0;
 }
 .logo-header span {
   font-family: Raleway, sans-serif;
   color: #2196f3;
 }
+@media screen and (min-width: 480px) {
+  .logo-header {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-right: 86px;
+  }
+}
 
 /* ==============  Навигация =========== */
-.nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-list > li:not(:last-child) {
+    margin-right: 50px;
+  }
 }
-.nav-list > li:not(:last-child) {
-  margin-right: 50px;
-}
-
 .site-nav {
   display: block;
   font-size: 14px;
