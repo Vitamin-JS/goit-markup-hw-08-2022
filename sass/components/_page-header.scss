@@ -142,3 +142,22 @@
 .nav-contacts li:hover .icon {
   fill: $color-acent;
 }
+
+// Іконка бургер-меню для мобільного
+.headmobile-menu {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &-open {
+    fill: red;
+    width: 40px;
+    height: 40px;
+  }
+}
