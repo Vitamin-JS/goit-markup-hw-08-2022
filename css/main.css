@@ -450,19 +450,19 @@ p {
 
 .headmobile-menu {
   position: absolute;
-  display: inline-block;
-  top: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  top: -6px;
   right: 0;
-  width: 40px;
-  height: 40px;
   border: none;
+  background-color: transparent;
   margin: 0;
   padding: 0;
 }
-.headmobile-menu-open {
-  fill: red;
-  width: 40px;
-  height: 40px;
+
+.icon-mibile-cross {
+  display: none;
 }
 
 /* ========= Заголовки Чем занимаемся, Наша команда, Клиенты ================== */
