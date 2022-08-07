@@ -17,14 +17,13 @@
 
 /* ================ Логотип ============ */
 .logo-header {
-  display: block;
+  display: inline-block;
   font-family: Raleway, sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.17;
   color: $secondary-text-color;
   text-decoration: none;
-
   margin-left: 0;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -36,6 +35,7 @@
   }
 
   @media screen and (min-width: $mobile) {
+    display: block;
     font-size: 26px;
     line-height: 1.2;
     margin-right: 86px;
@@ -144,17 +144,19 @@
 }
 
 // Іконка бургер-меню для мобільного
-.headmobile-menu {
-  position: absolute;
-  display: inline-flex;
-  top: -6px;
-  right: 0;
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-}
+@media screen and (max-width: $mobile) {
+  .headmobile-menu {
+    position: absolute;
+    top: 6px;
+    display: inline-flex;
 
-.icon-mibile-cross {
-  display: none;
+    border: none;
+    background-color: transparent;
+
+    padding: 0;
+  }
+
+  .icon-mibile-cross {
+    display: none;
+  }
 }

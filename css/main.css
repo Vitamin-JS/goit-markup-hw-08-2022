@@ -316,7 +316,7 @@ p {
 }
 /* ================ Логотип ============ */
 .logo-header {
-  display: block;
+  display: inline-block;
   font-family: Raleway, sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -334,6 +334,7 @@ p {
 }
 @media screen and (min-width: 480px) {
   .logo-header {
+    display: block;
     font-size: 26px;
     line-height: 1.2;
     margin-right: 86px;
@@ -448,23 +449,21 @@ p {
   fill: #2196f3;
 }
 
-.headmobile-menu {
-  position: absolute;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  top: -6px;
-  right: 0;
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
+@media screen and (max-width: 480px) {
+  .headmobile-menu {
+    position: absolute;
+    top: 6px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  .icon-mibile-cross {
+    display: none;
+  }
 }
-
-.icon-mibile-cross {
-  display: none;
-}
-
 /* ========= Заголовки Чем занимаемся, Наша команда, Клиенты ================== */
 .works-title,
 .team-title,
