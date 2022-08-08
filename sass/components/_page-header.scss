@@ -144,12 +144,14 @@
 }
 
 // Іконка бургер-меню для мобільного
+
 @media screen and (max-width: $mobile) {
   .headmobile-menu {
     position: absolute;
-    top: 6px;
     display: inline-flex;
-
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
     border: none;
     background-color: transparent;
 
@@ -159,4 +161,8 @@
   .icon-mibile-cross {
     display: none;
   }
+}
+
+.headmobile-menu.is-open .icon-mibile-cross {
+  display: block;
 }

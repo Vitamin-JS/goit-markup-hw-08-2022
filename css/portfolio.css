@@ -441,10 +441,13 @@ p {
 @media screen and (max-width: 480px) {
   .headmobile-menu {
     position: absolute;
-    top: 6px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 0;
     border: none;
     background-color: transparent;
     padding: 0;
@@ -453,6 +456,10 @@ p {
     display: none;
   }
 }
+.headmobile-menu.is-open .icon-mibile-cross {
+  display: block;
+}
+
 header {
   border-bottom: 1px solid #ececec;
   background-color: #e2e2e6;
