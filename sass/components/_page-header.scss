@@ -152,13 +152,18 @@
     top: 50%;
     transform: translateY(-50%);
     right: 0;
+
     border: none;
     background-color: transparent;
-
     padding: 0;
   }
 
   .icon-mibile-cross {
+    display: none;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .headmobile-menu {
     display: none;
   }
 }
