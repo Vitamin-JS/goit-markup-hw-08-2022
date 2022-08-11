@@ -517,12 +517,20 @@ p {
   font-weight: 900;
   line-height: 1.62;
   color: #ffffff;
-  max-width: 360px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 480px) {
+  .hero-title {
+    max-width: 320px;
+  }
+  .hero-title_mobile {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-title {

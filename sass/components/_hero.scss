@@ -28,13 +28,22 @@
     font-weight: 900;
     line-height: 1.62;
     color: #ffffff;
-    max-width: 360px;
+
     text-transform: uppercase;
     letter-spacing: 0.06em;
 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+
+    @media screen and (max-width: $mobile) {
+      max-width: 320px;
+
+      &_mobile {
+        margin-left: 70px;
+        margin-right: 70px;
+      }
+    }
 
     @media screen and (min-width: $desctop) {
       font-size: 44px;
