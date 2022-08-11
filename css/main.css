@@ -476,6 +476,10 @@ p {
   display: block;
 }
 
+.headmobile-menu.is-open .icon-mibile-menu {
+  display: none;
+}
+
 /* ========= Заголовки Чем занимаемся, Наша команда, Клиенты ================== */
 .works-title,
 .team-title,
@@ -490,8 +494,6 @@ p {
 
 /* =====================      Блок  Hero   ================ */
 .hero {
-  max-width: 1600px;
-  max-height: 600px;
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -499,19 +501,35 @@ p {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("../images/header-meeting-min.jpg");
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    max-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero-title {
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.4;
+  line-height: 1.62;
   color: #ffffff;
+  max-width: 360px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.4;
+    max-width: 1200px;
+  }
 }
 
 .hero-btn {

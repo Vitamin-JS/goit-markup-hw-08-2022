@@ -465,6 +465,10 @@ p {
   display: block;
 }
 
+.headmobile-menu.is-open .icon-mibile-menu {
+  display: none;
+}
+
 header {
   border-bottom: 1px solid #ececec;
   background-color: #e2e2e6;
