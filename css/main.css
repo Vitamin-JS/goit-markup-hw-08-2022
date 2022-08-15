@@ -278,16 +278,16 @@ p {
 
 .container {
   position: relative;
-  width: 360px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 738px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 1200px;
     padding-left: 15px;
@@ -462,12 +462,13 @@ p {
     border: none;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
   }
   .icon-mibile-cross {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .headmobile-menu {
     display: none;
   }
@@ -513,7 +514,7 @@ p {
   }
 }
 .hero-title {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 900;
   line-height: 1.62;
   color: #ffffff;
@@ -526,6 +527,7 @@ p {
 @media screen and (max-width: 480px) {
   .hero-title {
     max-width: 320px;
+    font-size: 26px;
   }
   .hero-title_mobile {
     margin-left: 70px;

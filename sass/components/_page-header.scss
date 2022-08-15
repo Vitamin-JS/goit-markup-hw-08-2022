@@ -156,13 +156,14 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
   }
 
   .icon-mibile-cross {
     display: none;
   }
 }
-@media screen and (min-width: $tablet) {
+@media screen and (min-width: $mobile) {
   .headmobile-menu {
     display: none;
   }
