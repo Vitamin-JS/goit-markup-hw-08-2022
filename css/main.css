@@ -527,7 +527,6 @@ p {
 @media screen and (max-width: 480px) {
   .hero-title {
     max-width: 320px;
-    font-size: 26px;
   }
   .hero-title_mobile {
     margin-left: 70px;
@@ -827,15 +826,29 @@ p {
 /* ================ Секция Преимущесва ==================  */
 /* ==== Flex-box Преимущества   =============*/
 .adv-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
 }
-.adv-list > li {
-  width: calc((100% - 90px) / 4);
+@media screen and (min-width: 480px) {
+  .adv-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
-.adv-list > li:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .adv-list > li {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adv-list > li {
+    width: calc((100% - 90px) / 4);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adv-list > li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* === Фон иконок в Преимуществах -Var#3 Inline-SVG  =======*/
