@@ -12,7 +12,9 @@
 }
 
 .team-members {
-  display: flex;
+  @media screen and(min-width: $mobile) {
+    display: flex;
+  }
 }
 
 /* ======== Заголовок Наша команда ======== */
@@ -103,12 +105,14 @@
 
 /* ==== Карточка команды- Li */
 .team-card {
-  width: calc((100% - 90px) / 4);
   background: $main-bg-color;
-
   box-shadow: 2px 2px 3px 2px rgb(0 0 0 / 12%), 2px 1px 1px 1px rgb(0 0 0 / 19%),
     1px 2px 1px 2px rgb(0 0 0 / 15%);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: $desctop) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 /* === Отступы в соцсетях команды ======== */
