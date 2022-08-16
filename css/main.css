@@ -906,8 +906,18 @@ p {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 480px) {
+  .advant-decr {
+    height: 75px;
+  }
+}
 
 /* ========================== Секция Чем мы занимаемся    ==============================  */
+@media screen and (max-width: 480px) {
+  .works {
+    display: none;
+  }
+}
 /* ===========  Flex-box списка  ========  */
 .works-list {
   display: -webkit-box;

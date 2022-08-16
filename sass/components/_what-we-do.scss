@@ -1,4 +1,11 @@
 /* ========================== Секция Чем мы занимаемся    ==============================  */
+// ========== Приховати всю секцію для $mobile breakpoint=========
+@media screen and(max-width: $mobile) {
+  .works {
+    display: none;
+  }
+}
+
 /* ===========  Flex-box списка  ========  */
 .works-list {
   display: flex;

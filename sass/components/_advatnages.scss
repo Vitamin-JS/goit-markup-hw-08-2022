@@ -82,5 +82,8 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  // height: 75px;
+
+  @media screen and(min-width: $mobile) {
+    height: 75px;
+  }
 }
