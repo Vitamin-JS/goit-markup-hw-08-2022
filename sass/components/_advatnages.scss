@@ -1,7 +1,6 @@
 /* ================ Секция Преимущесва ==================  */
 /* ==== Flex-box Преимущества   =============*/
 .adv-list {
-  width: 100%;
   @media screen and(min-width: $mobile) {
     display: flex;
   }
@@ -17,6 +16,10 @@
   }
 
   & > li:not(:last-child) {
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 30px;
+    }
+
     @media screen and(min-width: $desctop) {
       margin-right: 30px;
     }
@@ -25,6 +28,8 @@
 
 /* === Фон иконок в Преимуществах -Var#3 Inline-SVG  =======*/
 .icon-advantage {
+  width: 100%;
+
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 25px;
@@ -69,9 +74,9 @@
 }
 
 /* ======== Абзац в Преимуществах========== */
-.advantage p {
+.advant-decr {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  height: 75px;
+  // height: 75px;
 }
