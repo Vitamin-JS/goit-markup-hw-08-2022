@@ -486,8 +486,8 @@ p {
 .team-title,
 .clients-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
@@ -970,8 +970,14 @@ p {
 /* =====  Размеры всей секции  ============ */
 .team {
   background-color: #e2e2e6;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-members {
@@ -982,7 +988,13 @@ p {
 
 /* ======== Заголовок Наша команда ======== */
 .team-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 /* ========== Фото команды   ============== */
