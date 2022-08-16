@@ -29,7 +29,6 @@
 /* === Фон иконок в Преимуществах -Var#3 Inline-SVG  =======*/
 .icon-advantage {
   width: 100%;
-
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 25px;
@@ -40,8 +39,13 @@
 
 /* =====  Margin внизу всей секции  ==========*/
 .advantage {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   & h2 {
     @extend %visually-hidden;

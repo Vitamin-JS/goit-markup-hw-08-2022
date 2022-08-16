@@ -866,8 +866,14 @@ p {
 
 /* =====  Margin внизу всей секции  ==========*/
 .advantage {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 /* ===== Margin иконок   =================*/
 .advantage img {
