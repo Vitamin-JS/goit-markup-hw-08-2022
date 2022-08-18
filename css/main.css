@@ -1095,8 +1095,10 @@ p {
 }
 
 /* === Правый отступ для 3х первых карточек сотрудников ===*/
-.team-members .team-card:nth-child(-n+3) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .team-members .team-card:nth-child(-n+3) {
+    margin-right: 30px;
+  }
 }
 
 /* =============================== Секция Постоянные клиенты ==================================  */

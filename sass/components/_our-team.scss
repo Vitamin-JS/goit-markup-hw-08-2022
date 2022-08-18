@@ -122,5 +122,7 @@
 
 /* === Правый отступ для 3х первых карточек сотрудников ===*/
 .team-members .team-card:nth-child(-n + 3) {
-  margin-right: 30px;
+  @media screen and(min-width: $mobile) {
+    margin-right: 30px;
+  }
 }
