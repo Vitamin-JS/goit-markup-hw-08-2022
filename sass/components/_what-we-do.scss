@@ -1,6 +1,6 @@
 /* ========================== Секция Чем мы занимаемся    ==============================  */
 // ========== Приховати всю секцію для $mobile breakpoint=========
-@media screen and(max-width: $mobile) {
+@media screen and(max-width: 769px) {
   .works {
     display: none;
   }

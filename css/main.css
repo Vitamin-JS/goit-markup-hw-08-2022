@@ -284,13 +284,18 @@ p {
 @media screen and (min-width: 480px) {
   .container {
     width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -855,8 +860,6 @@ p {
 /* === Фон иконок в Преимуществах -Var#3 Inline-SVG  =======*/
 .icon-advantage {
   width: 100%;
-  padding-left: 100px;
-  padding-right: 100px;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 30px;
@@ -912,7 +915,7 @@ p {
 }
 
 /* ========================== Секция Чем мы занимаемся    ==============================  */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 769px) {
   .works {
     display: none;
   }
