@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header class="container">
+    <header>
       <!--Навигация на другие страницы сайта-->
       <div class="container header-flex">
         <a href="/" class="logo-header"><span>Web</span>Profi</a>
@@ -56,7 +56,13 @@
         </ul>
 
         <!-- Бургер меню для mobile version - is-open-->
-        <button type="button" class="headmobile-menu" data-menu-button>
+        <button
+          type="button"
+          class="headmobile-menu"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use
               class="icon-mobile-menu"
@@ -69,8 +75,10 @@
           </svg>
         </button>
       </div>
+      <div class="menu-container" id="menu-container" data-menu>
+        Мобільне меню
+      </div>
     </header>
-
     <main>
       <!-- Блок Герой -->
       <section class="hero">
@@ -638,8 +646,6 @@
         </ul>
       </section>
     </main>
-
-    <!-- ===========  Тест из конспекта============================================= -->
 
     <!-- ====================   Блок Футер  ====================================-->
     <footer>

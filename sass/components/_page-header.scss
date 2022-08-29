@@ -1,4 +1,8 @@
 /* =====================   Стили Хедера ========================= */
+header {
+  position: relative;
+}
+
 /* ==== Flex-box Header   ============= */
 @media screen and (max-width: $mobile) {
   .header-nav,
@@ -175,4 +179,23 @@
 
 .headmobile-menu.is-open .icon-mobile-menu {
   display: none;
+}
+
+.menu-container {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background-color: coral;
+
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.16;
+
+  &.is-open {
+    display: block;
+  }
 }
