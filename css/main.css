@@ -1184,8 +1184,20 @@ header {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list > li:not(:last-child) {
+.clients-list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.clients-list > li:nth-child(2n+1) {
   margin-right: 30px;
+}
+.clients-list > li:not(:nth-last-child(-n+2)) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients-list > li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients a:hover,
