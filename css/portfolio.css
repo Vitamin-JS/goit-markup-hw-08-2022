@@ -272,7 +272,7 @@ p {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 481px;
     margin-left: auto;
     margin-right: auto;
   }
