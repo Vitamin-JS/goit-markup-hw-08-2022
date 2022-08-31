@@ -1,8 +1,13 @@
 /* =============================== Секция Постоянные клиенты ==================================  */
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width: $tablet) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   /* === Заголовок Клиенты ============ */
   &-title {

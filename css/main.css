@@ -1129,10 +1129,16 @@ header {
 
 /* =============================== Секция Постоянные клиенты ==================================  */
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   /* === Заголовок Клиенты ============ */
   /* ======= Список компаний =========== */
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients-title {
   margin-bottom: 50px;
