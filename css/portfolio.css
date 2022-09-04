@@ -293,13 +293,13 @@ header {
   position: relative;
 }
 
-/* ==== Flex-box Header   ============= */
 @media screen and (max-width: 480px) {
   .header-nav,
 .nav-contacts.list {
     display: none;
   }
 }
+/* ==== Flex-box Header   ============= */
 @media screen and (min-width: 480px) {
   .header-flex {
     display: -webkit-box;

@@ -3,7 +3,6 @@ header {
   position: relative;
 }
 
-/* ==== Flex-box Header   ============= */
 @media screen and (max-width: $mobile) {
   .header-nav,
   .nav-contacts.list {
@@ -11,6 +10,7 @@ header {
   }
 }
 
+/* ==== Flex-box Header   ============= */
 @media screen and(min-width: $mobile) {
   .header-flex {
     display: flex;
@@ -167,6 +167,7 @@ header {
     display: none;
   }
 }
+
 @media screen and (min-width: $mobile) {
   .headmobile-menu {
     display: none;
