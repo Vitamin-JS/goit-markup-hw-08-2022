@@ -280,7 +280,7 @@ p {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .container {
     width: 768px;
   }
@@ -342,7 +342,7 @@ header {
 }
 
 /* ==============  Навигация =========== */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -291,7 +291,7 @@ p {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .container {
     width: 768px;
   }
@@ -353,7 +353,7 @@ header {
 }
 
 /* ==============  Навигация =========== */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -526,6 +526,7 @@ header {
   background-position: center;
   background-size: cover;
   text-align: center;
+  max-width: 1600px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.5))), url("../images/header-meeting-min.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.5)), url("../images/header-meeting-min.jpg");
   margin-left: auto;
@@ -535,7 +536,6 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -605,9 +605,11 @@ header {
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.8);
-          transform: translate(-50%, -50%) scale(0.8);
+@media screen and (min-width: 769px) {
+  .backdrop.is-hidden .modal {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+  }
 }
 
 /* === Стили модального окна ======= */
@@ -680,7 +682,7 @@ header {
     width: 370px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .modal-input {
     width: 448px;
   }
@@ -733,6 +735,7 @@ header {
   display: inline-block;
   position: absolute;
   left: 0;
+  top: 0px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
@@ -778,7 +781,6 @@ header {
 }
 
 .modal-policy-link {
-  margin-left: 24px;
   color: #2196f3;
 }
 
@@ -1156,7 +1158,7 @@ header {
   /* === Заголовок Клиенты ============ */
   /* ======= Список компаний =========== */
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .clients {
     padding-top: 94px;
     padding-bottom: 94px;
