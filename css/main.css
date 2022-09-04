@@ -615,12 +615,12 @@ header {
   -webkit-transition: tarnsform 250ms linear, 250ms linear;
   transition: tarnsform 250ms linear, 250ms linear;
   padding: 40px;
-  margin-top: 93px;
 }
 @media screen and (max-width: 480px) {
   .modal {
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 93px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -837,14 +837,18 @@ header {
   fill: #2196f3;
 }
 
+.modal-form {
+  position: relative;
+}
+
 /* === Кнопка Close в модалке SVG ========== */
 .modal-close {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 0px;
-  right: 0px;
+  top: -32px;
+  right: -32px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -853,12 +857,18 @@ header {
           align-items: center;
   width: 30px;
   height: 30px;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+@media screen and (min-width: 480px) {
+  .modal-close {
+    top: -40px;
+    right: -40px;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+  }
 }
 .modal-close:hover .icon-modal-close, .modal-close:focus .icon-modal-close {
   fill: #2196f3;
