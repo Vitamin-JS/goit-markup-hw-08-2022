@@ -620,7 +620,7 @@ header {
   border-radius: 4px;
   -webkit-transition: tarnsform 250ms linear, 250ms linear;
   transition: tarnsform 250ms linear, 250ms linear;
-  padding: 40px;
+  padding: 40px 20px 60px;
 }
 @media screen and (max-width: 480px) {
   .modal {
@@ -689,10 +689,15 @@ header {
 }
 
 .modal-data textarea {
-  height: 120px;
+  height: 100px;
   padding: 12px 16px;
   margin-bottom: 0;
   resize: none;
+}
+@media screen and (min-width: 480px) {
+  .modal-data textarea {
+    height: 120px;
+  }
 }
 
 /* === Позиционирование Label=== */
@@ -846,7 +851,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   top: -32px;
-  right: -32px;
+  right: -12px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

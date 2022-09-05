@@ -33,7 +33,7 @@
   border-radius: 4px;
 
   transition: tarnsform 250ms linear, 250ms linear;
-  padding: 40px;
+  padding: 40px 20px 60px;
 
   @media screen and (max-width: $mobile) {
     margin-left: 15px;
@@ -100,10 +100,14 @@
 }
 
 .modal-data textarea {
-  height: 120px;
+  height: 100px;
   padding: 12px 16px;
   margin-bottom: 0;
   resize: none;
+
+  @media screen and (min-width: $mobile) {
+    height: 120px;
+  }
 }
 
 /* === Позиционирование Label=== */
@@ -238,7 +242,7 @@
   position: absolute;
   display: flex;
   top: -32px;
-  right: -32px;
+  right: -12px;
 
   justify-content: center;
   align-items: center;
