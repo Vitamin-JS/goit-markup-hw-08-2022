@@ -16,44 +16,57 @@
 
   <body>
     <header>
-      <!--Навигация на другие страницы сайта-->
+      <!-- -------------Навигация на другие страницы сайта--------------  -->
       <div class="container header-flex">
         <a href="/" class="logo-header"><span>Web</span>Profi</a>
-        <nav class="header-nav">
-          <ul class="list nav-list">
-            <li class="nav-item current-page">
-              <a href="./index.html" class="site-nav current">Головна</a>
-            </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="site-nav">Портфоліо</a>
-            </li>
-            <li class="nav-item"><a href="" class="site-nav">Контакти</a></li>
-          </ul>
-        </nav>
-
-        <!-- Блок с контактами -->
-        <ul class="nav-contacts list">
-          <li class="icon-envelop">
-            <a href="mailto:info@webprofi.com" target="_blank" rel="noopener">
-              <svg class="icon" width="16" height="16">
-                <use
-                  href="./images/SVG-for-sprite/sprite-all-min.svg#icon-envelope"
-                ></use>
-              </svg>
-              info@webprofi.com
-            </a>
-          </li>
-          <li class="icon-mobile">
-            <a href="tel:+380991919191" target="_blank" rel="noopener">
-              <svg class="icon" width="16" height="16">
-                <use
-                  href="./images/SVG-for-sprite/sprite-all-min.svg#icon-phone"
-                ></use>
-              </svg>
-              +38 099 191 91 91
-            </a>
-          </li>
-        </ul>
+        <div class="menu-container" id="menu-container" data-menu>
+          Мобільне меню А де все інше?
+          <!-- ---------------------Блок навігація----------------------- -->
+          <div class="navigation">
+            <nav class="header-nav">
+              <ul class="list nav-list">
+                <li class="nav-item current-page">
+                  <a href="./index.html" class="site-nav current">Головна</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./portfolio.html" class="site-nav">Портфоліо</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="site-nav">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- -----------Блок с контактами------------------ -->
+          <div class="contacts">
+            <ul class="nav-contacts list">
+              <li class="icon-envelop">
+                <a
+                  href="mailto:info@webprofi.com"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <svg class="icon" width="16" height="16">
+                    <use
+                      href="./images/SVG-for-sprite/sprite-all-min.svg#icon-envelope"
+                    ></use>
+                  </svg>
+                  info@webprofi.com
+                </a>
+              </li>
+              <li class="icon-mobile">
+                <a href="tel:+380991919191" target="_blank" rel="noopener">
+                  <svg class="icon" width="16" height="16">
+                    <use
+                      href="./images/SVG-for-sprite/sprite-all-min.svg#icon-phone"
+                    ></use>
+                  </svg>
+                  +38 099 191 91 91
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <!-- Бургер меню для mobile version - is-open-->
         <button
@@ -74,9 +87,6 @@
             ></use>
           </svg>
         </button>
-      </div>
-      <div class="menu-container" id="menu-container" data-menu>
-        Мобільне меню А де все інше?
       </div>
     </header>
     <main>
