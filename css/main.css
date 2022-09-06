@@ -346,6 +346,28 @@ header {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background-color: #ffffff;
+    border-top: 1px solid #ececec;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.16;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
 /* ==============  Навигация =========== */
 .nav-list {
   display: -webkit-box;
@@ -419,15 +441,24 @@ header {
 }
 
 /* ========== Контакты в навигации ======== */
+.contacts {
+  margin-top: 48px;
+}
+
 .nav-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-contacts > li:not(:last-child) {
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 769px) {
   .nav-contacts {
@@ -435,13 +466,19 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-left: auto;
   }
 }
-.nav-contacts > li:not(:first-of-type) {
-  margin-left: 30px;
+@media screen and (min-width: 769px) {
+  .nav-contacts > li:not(:first-of-type) {
+    margin-left: 30px;
+  }
 }
 
 .nav-contacts a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.1;
@@ -457,17 +494,15 @@ header {
 .nav-contacts a:hover, .nav-contacts a:focus {
   color: #2196f3;
 }
+@media screen and (minwidth: 769px) {
+  .nav-contacts a {
+    padding-top: 22px;
+    padding-bottom: 30px;
+  }
+}
 
 /* ===== Иконки перед контактами  Вариант через ::before/after в коде HW06 ====== */
 /* ===== Иконки перед контактами  Вариант через inline-SVG  ====== */
-.nav-contacts a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 22px;
-  padding-bottom: 30px;
-}
-
 .icon {
   margin-right: 10px;
   fill: #757575;
@@ -507,27 +542,6 @@ header {
 
 .headmobile-menu.is-open .icon-mobile-menu {
   display: none;
-}
-
-@media screen and (max-width: 480px) {
-  .menu-container {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100vw;
-    background-color: #ffffff;
-    border-top: 1px solid #ececec;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.16;
-    padding: 20px;
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  .menu-container.is-open {
-    display: block;
-  }
 }
 
 /* ========= Заголовки Чем занимаемся, Наша команда, Клиенты ================== */
