@@ -41,19 +41,12 @@ header {
 
 /* ==============  Навигация =========== */
 
-.header-nav {
-  @media screen and(max-width: $mobile) {
-    width: min-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-@media screen and(min-width: $tablet) {
-  .nav-list {
-    display: flex;
-    align-items: center;
-
+  @media screen and(min-width: $tablet) {
     & > li:not(:last-child) {
       margin-right: 50px;
     }
@@ -114,6 +107,11 @@ header {
 .nav-contacts {
   display: flex;
   margin-left: auto;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
 
   & > li:not(:first-of-type) {
     margin-left: 30px;
