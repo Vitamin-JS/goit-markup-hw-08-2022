@@ -41,6 +41,14 @@ header {
 
 /* ==============  Навигация =========== */
 
+.header-nav {
+  @media screen and(max-width: $mobile) {
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and(min-width: $tablet) {
   .nav-list {
     display: flex;
@@ -60,7 +68,7 @@ header {
   color: $secondary-text-color;
   text-decoration: none;
   padding-top: 40px;
-  padding-bottom: 8px;
+  // padding-bottom: 8px;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -95,6 +103,7 @@ header {
   background-color: $color-acent;
   border-radius: 2px;
   opacity: 0;
+  margin-top: 8px;
 }
 
 .current-page::after {
