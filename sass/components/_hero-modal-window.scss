@@ -130,7 +130,9 @@
 
 /* === Чекбокс политики  ========= */
 .data-policy {
-  // justify-content: center;
+  @media screen and (max-width: $mobile) {
+    margin-left: 30px;
+  }
 
   font-size: 14px;
   line-height: 1.7;
@@ -143,25 +145,37 @@
 .data-policy-label {
   position: relative;
   // align-items: center;
-  padding-left: 24px;
+  line-height: 2;
+  @media screen and(min-width: $mobile) {
+    padding-left: 24px;
+  }
 }
 
 .data-policy-checkbox {
   display: inline-block;
   position: absolute;
-  left: 0;
+  left: -28px;
   top: 0px;
-  width: 16px;
-  height: 15px;
+  width: 18px;
+  height: 17px;
 
   border-radius: 2px;
   border: solid 2px $secondary-text-color;
   margin-right: 8px;
 
+  @media screen and(min-width: $mobile) {
+    left: 0;
+  }
+
   .checkbox:focus ~ & {
     width: 20px;
     height: 19px;
     border: solid 2px $color-acent;
+  }
+
+  @media screen and(min-width: $mobile) {
+    width: 16px;
+    height: 15px;
   }
 }
 
@@ -198,6 +212,7 @@
 
 .modal-policy-link {
   color: $color-acent;
+  display: inline;
 }
 
 /* === Аутлайн инпутов при фокусе ===== */

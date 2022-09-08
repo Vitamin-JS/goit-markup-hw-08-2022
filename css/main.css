@@ -764,28 +764,49 @@ header {
   text-align: left;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 480px) {
+  .data-policy {
+    margin-left: 30px;
+  }
+}
 
 /* ==== кастомный чекбокс - span ==== */
 .data-policy-label {
   position: relative;
-  padding-left: 24px;
+  line-height: 2;
+}
+@media screen and (min-width: 480px) {
+  .data-policy-label {
+    padding-left: 24px;
+  }
 }
 
 .data-policy-checkbox {
   display: inline-block;
   position: absolute;
-  left: 0;
+  left: -28px;
   top: 0px;
-  width: 16px;
-  height: 15px;
+  width: 18px;
+  height: 17px;
   border-radius: 2px;
   border: solid 2px #212121;
   margin-right: 8px;
+}
+@media screen and (min-width: 480px) {
+  .data-policy-checkbox {
+    left: 0;
+  }
 }
 .checkbox:focus ~ .data-policy-checkbox {
   width: 20px;
   height: 19px;
   border: solid 2px #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .data-policy-checkbox {
+    width: 16px;
+    height: 15px;
+  }
 }
 
 /* === Скрываю чекбокс в Политике ====== */
@@ -822,6 +843,7 @@ header {
 
 .modal-policy-link {
   color: #2196f3;
+  display: inline;
 }
 
 /* === Аутлайн инпутов при фокусе ===== */
