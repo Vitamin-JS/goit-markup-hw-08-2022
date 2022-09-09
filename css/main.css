@@ -1306,18 +1306,26 @@ header {
 /* =========================  Футер  ======================== */
 footer {
   background-color: #2f303a;
-  min-width: 1200px;
 }
 
 .footer-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (max-width: 480px) {
+  .footer-box {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 /*  ========  Логотип Футера  ============ */
@@ -1348,9 +1356,11 @@ footer {
   margin-bottom: 9px;
 }
 
-/* ======= Отступ справа от адреса ============== */
-.footer-contacts {
-  margin-right: 70px;
+/* ======= Стилі дреси ============== */
+@media screen and (min-width: 480px) {
+  .footer-contacts {
+    margin-right: 70px;
+  }
 }
 
 /* ========= Заголовки в футере   ========*/

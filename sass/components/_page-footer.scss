@@ -1,14 +1,21 @@
 /* =========================  Футер  ======================== */
 footer {
   background-color: $footer-bg-color;
-  min-width: 1200px;
+  // min-width: 1200px;
 }
 
 .footer-box {
-  display: flex;
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (max-width: $mobile) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+  }
 }
 
 /*  ========  Логотип Футера  ============ */
@@ -39,9 +46,11 @@ footer {
   margin-bottom: 9px;
 }
 
-/* ======= Отступ справа от адреса ============== */
+/* ======= Стилі дреси ============== */
 .footer-contacts {
-  margin-right: 70px;
+  @media screen and(min-width: $mobile) {
+    margin-right: 70px;
+  }
 }
 
 /* ========= Заголовки в футере   ========*/
