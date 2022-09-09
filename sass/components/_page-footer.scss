@@ -46,7 +46,7 @@ footer {
   margin-bottom: 9px;
 }
 
-/* ======= Стилі дреси ============== */
+/* ======= Стилі адреси ============== */
 .footer-contacts {
   @media screen and(min-width: $mobile) {
     margin-right: 70px;
@@ -63,6 +63,12 @@ footer {
   text-transform: uppercase;
   color: $main-bg-color;
   margin-bottom: 20px;
+}
+// ==== Відстут між блоком адреси
+.foter-social {
+  @media screen and (max-width: $mobile) {
+    margin-top: 60px;
+  }
 }
 
 /* ===== Ссылки на соцсети в футере Var#3 Inline-SVG  ==========================*/
