@@ -671,6 +671,8 @@ header {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
