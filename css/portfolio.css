@@ -297,17 +297,24 @@ header {
 }
 
 /* ==== Flex-box Header   ============= */
+.header-flex {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media screen and (min-width: 480px) {
   .header-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 80px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    padding-top: 6px;
   }
 }
+
 /* ================ Логотип ============ */
 .logo-header {
   display: inline-block;
@@ -318,8 +325,8 @@ header {
   color: #212121;
   text-decoration: none;
   margin-left: 0;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
   padding: 0;
 }
 .logo-header span {

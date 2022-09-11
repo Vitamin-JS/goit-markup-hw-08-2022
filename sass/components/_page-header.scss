@@ -4,11 +4,14 @@ header {
 }
 
 /* ==== Flex-box Header   ============= */
-@media screen and(min-width: $mobile) {
-  .header-flex {
-    display: flex;
+.header-flex {
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  @media screen and(min-width: $mobile) {
+    height: 80px;
     align-items: baseline;
-    padding-top: 6px;
   }
 }
 
@@ -22,8 +25,10 @@ header {
   color: $secondary-text-color;
   text-decoration: none;
   margin-left: 0;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+  // margin-top: 16px;
+  // margin-bottom: 16px;
   padding: 0;
 
   & span {
