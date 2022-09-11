@@ -61,14 +61,27 @@ header {
       display: block;
     }
   }
+
+  @media screen and(min-width: $mobile) {
+    display: flex;
+  }
 }
 
 /* ==============  Навигация =========== */
 
+.navigation {
+  @media screen and(min-width: $mobile) {
+    margin-right: auto;
+  }
+}
+
 .nav-list {
   display: flex;
-  flex-direction: column;
   align-items: center;
+
+  @media screen and(max-width: $mobile) {
+    flex-direction: column;
+  }
 
   @media screen and(min-width: $tablet) {
     & > li:not(:last-child) {
@@ -120,7 +133,10 @@ header {
   background-color: $color-acent;
   border-radius: 2px;
   opacity: 0;
-  margin-top: 8px;
+
+  @media screen and(max-width: $mobile) {
+    margin-top: 8px;
+  }
 }
 
 .current-page::after {
@@ -129,24 +145,24 @@ header {
 
 /* ========== Контакты в навигации ======== */
 .contacts {
-  margin-top: 48px;
+  @media screen and(min-width: $mobile) {
+    margin-left: auto;
+  }
 }
 
 .nav-contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   & > li:not(:last-child) {
     margin-bottom: 16px;
   }
+  @media screen and (max-width: $mobile) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-  @media screen and (min-width: $tablet) {
-    flex-direction: row;
-    margin-left: auto;
+    margin-top: 48px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desctop) {
     & > li:not(:first-of-type) {
       margin-left: 30px;
     }

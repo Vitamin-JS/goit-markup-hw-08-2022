@@ -367,19 +367,36 @@ header {
     display: block;
   }
 }
+@media screen and (min-width: 480px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 /* ==============  Навигация =========== */
+@media screen and (min-width: 480px) {
+  .navigation {
+    margin-right: auto;
+  }
+}
+
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 @media screen and (min-width: 769px) {
   .nav-list > li:not(:last-child) {
@@ -433,7 +450,11 @@ header {
   background-color: #2196f3;
   border-radius: 2px;
   opacity: 0;
-  margin-top: 8px;
+}
+@media screen and (max-width: 480px) {
+  .nav-item::after {
+    margin-top: 8px;
+  }
 }
 
 .current-page::after {
@@ -441,35 +462,31 @@ header {
 }
 
 /* ========== Контакты в навигации ======== */
-.contacts {
-  margin-top: 48px;
-}
-
-.nav-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.nav-contacts > li:not(:last-child) {
-  margin-bottom: 16px;
-}
-@media screen and (min-width: 769px) {
-  .nav-contacts {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+@media screen and (min-width: 480px) {
+  .contacts {
     margin-left: auto;
   }
 }
-@media screen and (min-width: 769px) {
+
+.nav-contacts > li:not(:last-child) {
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 480px) {
+  .nav-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .nav-contacts > li:not(:first-of-type) {
     margin-left: 30px;
   }
