@@ -291,9 +291,9 @@ p {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 768px;
+    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -471,7 +471,7 @@ header {
 /* ========== Контакты в навигации ======== */
 @media screen and (min-width: 480px) {
   .contacts {
-    margin-left: auto;
+    margin-left: 84px;
   }
 }
 

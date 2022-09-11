@@ -35,8 +35,8 @@ p {
     margin-right: auto;
   }
 
-  @media screen and (min-width: $tablet) {
-    width: 768px;
+  @media screen and (min-width: $mobile) {
+    width: 738px;
   }
 
   @media screen and(min-width: $desctop) {
