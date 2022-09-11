@@ -320,9 +320,9 @@ header {
 @media screen and (min-width: 480px) {
   .header-flex {
     height: 80px;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -336,8 +336,6 @@ header {
   color: #212121;
   text-decoration: none;
   margin-left: 0;
-  margin-top: auto;
-  margin-bottom: auto;
   padding: 0;
 }
 .logo-header span {
@@ -379,16 +377,13 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 /* ==============  Навигация =========== */
-@media screen and (min-width: 480px) {
-  .navigation {
-    margin-right: auto;
-  }
-}
-
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,7 +413,6 @@ header {
   line-height: 1.1;
   color: #212121;
   text-decoration: none;
-  padding-top: 40px;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -432,15 +426,10 @@ header {
 .site-nav.current {
   color: #2196f3;
 }
-@media screen and (min-width: 480px) {
-  .site-nav {
-    padding-top: 22px;
-    padding-bottom: 28px;
-  }
-}
 
 /* ===== Декоратвная планка в навигации шапки ==== */
 .nav-item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,6 +437,11 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  .nav-item {
+    margin-top: 40px;
+  }
 }
 
 .nav-item::after {
@@ -461,6 +455,12 @@ header {
 @media screen and (max-width: 480px) {
   .nav-item::after {
     margin-top: 8px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .nav-item::after {
+    position: absolute;
+    bottom: -32px;
   }
 }
 

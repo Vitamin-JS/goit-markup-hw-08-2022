@@ -11,7 +11,7 @@ header {
 
   @media screen and(min-width: $mobile) {
     height: 80px;
-    align-items: baseline;
+    align-items: center;
   }
 }
 
@@ -25,10 +25,6 @@ header {
   color: $secondary-text-color;
   text-decoration: none;
   margin-left: 0;
-  margin-top: auto;
-  margin-bottom: auto;
-  // margin-top: 16px;
-  // margin-bottom: 16px;
   padding: 0;
 
   & span {
@@ -69,16 +65,11 @@ header {
 
   @media screen and(min-width: $mobile) {
     display: flex;
+    align-items: center;
   }
 }
 
 /* ==============  Навигация =========== */
-
-.navigation {
-  @media screen and(min-width: $mobile) {
-    margin-right: auto;
-  }
-}
 
 .nav-list {
   display: flex;
@@ -102,8 +93,6 @@ header {
   line-height: 1.1;
   color: $secondary-text-color;
   text-decoration: none;
-  padding-top: 40px;
-  // padding-bottom: 8px;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -117,18 +106,17 @@ header {
   &.current {
     color: $color-acent;
   }
-
-  @media screen and(min-width: $mobile) {
-    padding-top: 22px;
-    padding-bottom: 28px;
-  }
 }
 
 /* ===== Декоратвная планка в навигации шапки ==== */
 
 .nav-item {
+  position: relative;
   display: flex;
   flex-direction: column;
+  @media screen and(max-width: $mobile) {
+    margin-top: 40px;
+  }
 }
 
 .nav-item::after {
@@ -141,6 +129,11 @@ header {
 
   @media screen and(max-width: $mobile) {
     margin-top: 8px;
+  }
+
+  @media screen and(min-width: $mobile) {
+    position: absolute;
+    bottom: -32px;
   }
 }
 
