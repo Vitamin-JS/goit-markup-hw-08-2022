@@ -33,6 +33,10 @@ header {
   }
 
   @media screen and (min-width: $mobile) {
+    margin-right: 81px;
+  }
+
+  @media screen and (min-width: $desctop) {
     display: block;
     font-size: 26px;
     line-height: 1.2;

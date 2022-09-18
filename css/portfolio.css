@@ -275,14 +275,9 @@ p {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 481px;
+    width: 738px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 738px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -332,6 +327,11 @@ header {
   color: #2196f3;
 }
 @media screen and (min-width: 480px) {
+  .logo-header {
+    margin-right: 81px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .logo-header {
     display: block;
     font-size: 26px;

@@ -30,14 +30,14 @@ p {
   margin-right: 15px;
 
   @media screen and(min-width: $mobile) {
-    width: 481px;
+    width: 738px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  @media screen and (min-width: $mobile) {
-    width: 738px;
-  }
+  // @media screen and (min-width: $mobile) {
+  //   width: 738px;
+  // }
 
   @media screen and(min-width: $desctop) {
     width: 1200px;
