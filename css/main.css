@@ -1127,6 +1127,8 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1145,10 +1147,6 @@ header {
 .team img {
   display: block;
   margin-bottom: 30px;
-}
-
-.team-card {
-  overflow: hidden;
 }
 
 /* ========== Имена сотрудников =========== */
@@ -1220,15 +1218,24 @@ header {
 
 /* ==== Карточка команды- Li */
 .team-card {
+  overflow: hidden;
   background: #ffffff;
   -webkit-box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.12), 2px 1px 1px 1px rgba(0, 0, 0, 0.19), 1px 2px 1px 2px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.12), 2px 1px 1px 1px rgba(0, 0, 0, 0.19), 1px 2px 1px 2px rgba(0, 0, 0, 0.15);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 480px) {
+  .team-card {
+    width: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 1200px) {
   .team-card {
     width: calc((100% - 90px) / 4);
   }
+}
+.team-card:nth-child(2n+1) {
+  margin-right: 30px;
 }
 
 /* === Отступы в соцсетях команды ======== */
@@ -1239,11 +1246,6 @@ header {
 /* === Margin для карточек сотрудников ===*/
 .team-members .team-card:nth-child(-n+3) {
   margin-bottom: 30px;
-}
-@media screen and (min-width: 480px) {
-  .team-members .team-card:nth-child(-n+3) {
-    margin-right: 30px;
-  }
 }
 
 /* =============================== Секция Постоянные клиенты ==================================  */
