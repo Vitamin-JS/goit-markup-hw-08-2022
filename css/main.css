@@ -1055,7 +1055,7 @@ header {
 }
 
 /* ========================== Секция Чем мы занимаемся    ==============================  */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1200px) {
   .works {
     display: none;
   }
