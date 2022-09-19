@@ -3,15 +3,23 @@
 .adv-list {
   @media screen and(min-width: $mobile) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   & > li {
+    // ширина картки переваги
     @media screen and(min-width: $mobile) {
       width: calc((100% - 30px) / 2);
     }
 
     @media screen and(min-width: $desctop) {
       width: calc((100% - 90px) / 4);
+    }
+  }
+
+  & > li:nth-child(2n + 1) {
+    @media screen and(min-width: $mobile) and (max-width: $desctop) {
+      margin-right: 30px;
     }
   }
 

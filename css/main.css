@@ -967,6 +967,8 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 480px) {
@@ -977,6 +979,11 @@ header {
 @media screen and (min-width: 1200px) {
   .adv-list > li {
     width: calc((100% - 90px) / 4);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .adv-list > li:nth-child(2n+1) {
+    margin-right: 30px;
   }
 }
 @media screen and (max-width: 480px) {
