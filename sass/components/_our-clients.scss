@@ -4,14 +4,20 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and(min-width: $tablet) {
+  @media screen and(min-width: $desctop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 
   /* === Заголовок Клиенты ============ */
   &-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+  }
+
+  &-title {
+    @media screen and (min-width: $desctop) {
+      margin-bottom: 50px;
+    }
   }
 
   /* ======= Список компаний =========== */
