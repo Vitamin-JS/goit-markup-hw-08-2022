@@ -21,6 +21,7 @@ footer {
 /*  ========  Логотип Футера  ============ */
 .logo-header.logo-footer {
   color: $main-bg-color;
+  font-size: 26px;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -49,6 +50,10 @@ footer {
 /* ======= Стилі адреси ============== */
 .footer-contacts {
   @media screen and(min-width: $mobile) {
+    margin-left: 61px;
+  }
+
+  @media screen and(min-width: $desctop) {
     margin-right: 70px;
   }
 }
@@ -68,6 +73,10 @@ footer {
 .foter-social {
   @media screen and (max-width: $mobile) {
     margin-top: 60px;
+  }
+
+  @media screen and (min-width: $mobile) {
+    margin-left: 165px;
   }
 }
 
@@ -154,10 +163,6 @@ footer {
     display: flex;
   }
 }
-
-// .footer-input {
-//   width: 100%;
-// }
 
 .footer-btn {
   display: flex;

@@ -1381,12 +1381,15 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 /*  ========  Логотип Футера  ============ */
 .logo-header.logo-footer {
   color: #ffffff;
+  font-size: 26px;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -1415,6 +1418,11 @@ footer {
 /* ======= Стилі адреси ============== */
 @media screen and (min-width: 480px) {
   .footer-contacts {
+    margin-left: 61px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
     margin-right: 70px;
   }
 }
@@ -1436,6 +1444,11 @@ footer {
 @media screen and (max-width: 480px) {
   .foter-social {
     margin-top: 60px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .foter-social {
+    margin-left: 165px;
   }
 }
 
