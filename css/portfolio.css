@@ -776,7 +776,7 @@ footer {
 }
 
 /* ======= Стилі адреси ============== */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1200px) {
   .footer-contacts {
     margin-left: 61px;
   }
@@ -806,7 +806,7 @@ footer {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1200px) {
   .foter-social {
     margin-left: 165px;
   }

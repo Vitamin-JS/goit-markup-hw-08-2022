@@ -50,7 +50,7 @@ footer {
 
 /* ======= Стилі адреси ============== */
 .footer-contacts {
-  @media screen and(min-width: $mobile) {
+  @media screen and(min-width: $mobile) and (max-width: $desctop) {
     margin-left: 61px;
   }
 
@@ -76,7 +76,7 @@ footer {
     margin-top: 60px;
   }
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile) and (max-width: $desctop) {
     margin-left: 165px;
   }
 }
