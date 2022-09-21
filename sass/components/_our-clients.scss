@@ -37,6 +37,10 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (min-width: $mobile) {
+    width: 226px;
+  }
+
   @media screen and(min-width: $desctop) {
     width: 170px;
   }
@@ -54,11 +58,19 @@
   flex-wrap: wrap;
 
   & > li:nth-child(2n + 1) {
-    margin-right: 30px;
+    @media screen and(max-width: $mobile) {
+      margin-right: 30px;
+    }
   }
 
   & > li:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
+  }
+
+  & > li:not(:nth-child(3n + 3)) {
+    @media screen and (min-width: $mobile) {
+      margin-right: 30px;
+    }
   }
 
   & > li:not(:last-child) {

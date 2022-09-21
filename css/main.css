@@ -1300,6 +1300,11 @@ header {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 480px) {
+  .clients a {
+    width: 226px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .clients a {
     width: 170px;
@@ -1320,11 +1325,18 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.clients-list > li:nth-child(2n+1) {
-  margin-right: 30px;
+@media screen and (max-width: 480px) {
+  .clients-list > li:nth-child(2n+1) {
+    margin-right: 30px;
+  }
 }
 .clients-list > li:not(:nth-last-child(-n+2)) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .clients-list > li:not(:nth-child(3n+3)) {
+    margin-right: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clients-list > li:not(:last-child) {
