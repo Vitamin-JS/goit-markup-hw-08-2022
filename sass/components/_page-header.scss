@@ -21,6 +21,7 @@ header {
   font-family: Raleway, sans-serif;
   font-size: 24px;
   font-weight: 700;
+  letter-spacing: 0.03em;
   line-height: 1.17;
   color: $secondary-text-color;
   text-decoration: none;
@@ -33,14 +34,14 @@ header {
   }
 
   @media screen and (min-width: $mobile) {
-    margin-right: 81px;
+    margin-right: 100px;
   }
 
   @media screen and (min-width: $desctop) {
     display: block;
     font-size: 26px;
     line-height: 1.2;
-    margin-right: 86px;
+    margin-right: 105px;
   }
 }
 // Меню-контейнер для мобільного меню
@@ -83,7 +84,7 @@ header {
     flex-direction: column;
   }
 
-  @media screen and(min-width: $tablet) {
+  @media screen and(min-width: $mobile) {
     & > li:not(:last-child) {
       margin-right: 50px;
     }
@@ -148,7 +149,7 @@ header {
 /* ========== Контакты в навигации ======== */
 .contacts {
   @media screen and(min-width: $mobile) {
-    margin-left: 84px;
+    margin-left: 92px;
   }
 }
 

@@ -316,6 +316,7 @@ header {
   font-family: Raleway, sans-serif;
   font-size: 24px;
   font-weight: 700;
+  letter-spacing: 0.03em;
   line-height: 1.17;
   color: #212121;
   text-decoration: none;
@@ -328,7 +329,7 @@ header {
 }
 @media screen and (min-width: 480px) {
   .logo-header {
-    margin-right: 81px;
+    margin-right: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -336,7 +337,7 @@ header {
     display: block;
     font-size: 26px;
     line-height: 1.2;
-    margin-right: 86px;
+    margin-right: 105px;
   }
 }
 
@@ -389,7 +390,7 @@ header {
             flex-direction: column;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 480px) {
   .nav-list > li:not(:last-child) {
     margin-right: 50px;
   }
@@ -460,7 +461,7 @@ header {
 /* ========== Контакты в навигации ======== */
 @media screen and (min-width: 480px) {
   .contacts {
-    margin-left: 84px;
+    margin-left: 92px;
   }
 }
 
