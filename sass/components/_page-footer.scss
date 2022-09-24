@@ -46,7 +46,7 @@ footer {
   }
 }
 
-.footer-contacts li {
+.footer-contacts li:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -124,7 +124,15 @@ footer {
 
 /* ======= Поле ввода E-mail в футере   ============= */
 .footer-action {
-  margin-left: auto;
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and(min-width: $desctop) {
+    margin-left: auto;
+  }
 
   & input {
     width: 100%;
@@ -149,12 +157,16 @@ footer {
       width: 450px;
     }
 
+    @media screen and(min-width: $mobile) and (max-width: $tablet) {
+      margin-bottom: 20px;
+    }
+
     @media screen and(min-width: $tablet) {
       width: 358px;
     }
   }
 
-  @media screen and(max-width: $mobile) {
+  @media screen and(max-width: $tablet) {
     margin-top: 60px;
   }
 }
@@ -162,8 +174,9 @@ footer {
 /* ======= Кнопка ПОДПИСАТЬСЯ в футере   ============= */
 /* === Стили кнопки -:after работает только при display: flex; ======================     !!!     */
 .input-deco {
-  @media screen and(min-width: $mobile) {
+  @media screen and(min-width: $mobile) and (max-width: $desctop) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
