@@ -25,8 +25,12 @@ footer {
   font-size: 26px;
   margin-top: 0;
   margin-bottom: 20px;
+  margin-right: 0;
   width: 100%;
-  text-align: center;
+
+  @media screen and (max-width: $desctop) {
+    text-align: center;
+  }
 }
 
 /* ======= Адрес, Тел, E-mail в футере ========== */
@@ -174,7 +178,7 @@ footer {
 /* ======= Кнопка ПОДПИСАТЬСЯ в футере   ============= */
 /* === Стили кнопки -:after работает только при display: flex; ======================     !!!     */
 .input-deco {
-  @media screen and(min-width: $mobile) and (max-width: $desctop) {
+  @media screen and(min-width: $mobile) {
     display: flex;
     flex-wrap: wrap;
   }

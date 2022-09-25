@@ -1410,8 +1410,13 @@ footer {
   font-size: 26px;
   margin-top: 0;
   margin-bottom: 20px;
+  margin-right: 0;
   width: 100%;
-  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .logo-header.logo-footer {
+    text-align: center;
+  }
 }
 
 /* ======= Адрес, Тел, E-mail в футере ========== */
@@ -1575,7 +1580,7 @@ footer {
 
 /* ======= Кнопка ПОДПИСАТЬСЯ в футере   ============= */
 /* === Стили кнопки -:after работает только при display: flex; ======================     !!!     */
-@media screen and (min-width: 480px) and (max-width: 1200px) {
+@media screen and (min-width: 480px) {
   .input-deco {
     display: -webkit-box;
     display: -ms-flexbox;
