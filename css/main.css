@@ -1251,6 +1251,9 @@ header {
   .team-card {
     width: calc((100% - 90px) / 4);
   }
+  .team-card:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* === Отступы в соцсетях команды ======== */
