@@ -26,8 +26,8 @@ p {
 
 .container {
   position: relative;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media screen and(min-width: $mobile) {
     width: 738px;

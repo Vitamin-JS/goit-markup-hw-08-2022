@@ -270,8 +270,8 @@ p {
 
 .container {
   position: relative;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -461,7 +461,12 @@ header {
 /* ========== Контакты в навигации ======== */
 @media screen and (min-width: 480px) {
   .contacts {
-    margin-left: 365px;
+    margin-left: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: 335px;
   }
 }
 

@@ -149,7 +149,11 @@ header {
 /* ========== Контакты в навигации ======== */
 .contacts {
   @media screen and(min-width: $mobile) {
-    margin-left: 365px;
+    margin-left: 60px;
+  }
+
+  @media screen and(min-width: $desctop) {
+    margin-left: 335px;
   }
 }
 
