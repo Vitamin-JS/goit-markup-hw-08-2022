@@ -149,20 +149,27 @@ header {
 /* ========== Контакты в навигации ======== */
 .contacts {
   @media screen and(min-width: $mobile) {
-    margin-left: 92px;
+    margin-left: 365px;
   }
 }
 
 .nav-contacts {
-  & > li:not(:last-child) {
-    margin-bottom: 16px;
-  }
   @media screen and (max-width: $mobile) {
     display: flex;
     align-items: center;
     flex-direction: column;
 
     margin-top: 48px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    & > li:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: $desctop) {
+    display: flex;
   }
 
   @media screen and (min-width: $desctop) {

@@ -461,13 +461,10 @@ header {
 /* ========== Контакты в навигации ======== */
 @media screen and (min-width: 480px) {
   .contacts {
-    margin-left: 92px;
+    margin-left: 365px;
   }
 }
 
-.nav-contacts > li:not(:last-child) {
-  margin-bottom: 16px;
-}
 @media screen and (max-width: 480px) {
   .nav-contacts {
     display: -webkit-box;
@@ -481,6 +478,18 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 48px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .nav-contacts > li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
