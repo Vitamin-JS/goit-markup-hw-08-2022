@@ -5,24 +5,35 @@
   flex-wrap: wrap;
 
   & li {
-    width: 370px;
+    width: 100%;
+
+    @media screen and(min-width: $mobile) {
+      width: 370px;
+    }
+  }
+
+  & li:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 /* ====  Отступы карточек работ ======= */
-.jobs-list li:not(:nth-child(3n)) {
-  margin-right: 30px;
+@media screen and (min-width: $desctop) {
+  .jobs-list li:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
 }
 
 .jobs-card {
   display: inline-block;
   text-decoration: none;
+  width: 100%;
 }
 
 /* ====== Фото работ  ================= */
 .jobs-img {
   display: block;
+  width: 100%;
 }
 
 /* ====  Позиционирование и трансформация описания проета ==== */
@@ -33,7 +44,7 @@
 
 /* ==== Контейнер Названия и типа проекта=== */
 .descr {
-  width: 370px;
+  width: 100%;
   background-color: $main-bg-color;
 
   border-right: 1px solid #eeeeee;

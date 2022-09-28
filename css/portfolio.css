@@ -670,23 +670,33 @@ header {
       flex-wrap: wrap;
 }
 .jobs-list li {
-  width: 370px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .jobs-list li {
+    width: 370px;
+  }
+}
+.jobs-list li:not(:last-child) {
   margin-bottom: 30px;
 }
 
 /* ====  Отступы карточек работ ======= */
-.jobs-list li:not(:nth-child(3n)) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .jobs-list li:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
 }
-
 .jobs-card {
   display: inline-block;
   text-decoration: none;
+  width: 100%;
 }
 
 /* ====== Фото работ  ================= */
 .jobs-img {
   display: block;
+  width: 100%;
 }
 
 /* ====  Позиционирование и трансформация описания проета ==== */
@@ -697,7 +707,7 @@ header {
 
 /* ==== Контейнер Названия и типа проекта=== */
 .descr {
-  width: 370px;
+  width: 100%;
   background-color: #ffffff;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
