@@ -596,8 +596,14 @@ header {
 
 /* === Отступ секции main/header/footer ==== */
 .main-box {
-  padding-top: 93px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .main-box {
+    padding-top: 93px;
+    padding-bottom: 94px;
+  }
 }
 
 /* ==== Нижний отступ от фильтров ====== */
